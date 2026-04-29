@@ -1,11 +1,12 @@
-<p align="center">
+<div align="center">
+
   <img src="banner.avif" alt="Infinite Monkey AI" width="100%" />
-</p>
-
-### AI agents for your business.
-### Production AI systems, private gateways, and sovereign deployment strategies.
-
-[Website](https://8monkey.ai) · [GitHub](https://github.com/8monkey-ai) · [X](https://x.com/heiwen)
+  
+  ## AI Agents for your Business
+  ### Production AI systems, private gateways, and sovereign deployment strategies
+  
+  [Website](https://8monkey.ai) · [LinkedIn](https://www.linkedin.com/in/davideselvaggio/) · [X](https://x.com/heiwen)
+</div>
 
 ---
 
