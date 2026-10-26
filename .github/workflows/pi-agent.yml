@@ -63,6 +63,13 @@ jobs:
         if: ${{ hashFiles('bun.lock') != '' }}
         run: bun install --frozen-lockfile
 
+      # shortcut: Bedrock rejects strict tool schemas with more than 16 unions and Pi does not retry without them.
+      # Remove this step when https://github.com/earendil-works/pi/issues/11416 is fixed.
+      - name: Disable strict tool schemas for Bedrock
+        run: |
+          mkdir -p ~/.pi/agent
+          echo '{"providers":{"amazon-bedrock":{"compat":{"supportsStrictMode":false}}}}' > ~/.pi/agent/models.json
+
       - name: Run Pi agent
         id: pi
         uses: shaftoe/pi-coding-agent-action@develop
