@@ -35,7 +35,6 @@ Our open-source work focuses on the shared foundations needed for stronger AI ec
 | --- | --- |
 | [elysia-mcp](https://github.com/8monkey-ai/elysia-mcp) | Elysia plugin that turns existing typed routes into MCP tools without manual registration, schema duplication, or handler rewrites. |
 | [opentelemetry-instrumentation-bun-sql](https://github.com/8monkey-ai/opentelemetry-instrumentation-bun-sql) | OpenTelemetry instrumentation for Bun.SQL, covering PostgreSQL, MySQL, and SQLite queries with database semantic conventions. |
-| [no-orm](https://github.com/8monkey-ai/no-orm) | Tiny, composable ORM core for TypeScript libraries: primitives without heavy abstractions. |
 | [aikit-respond-io](https://github.com/8monkey-ai/aikit-respond-io) | Type-safe toolkit for Respond.io integrations, including a secure webhook handler. |
 
 ## Get in Touch
