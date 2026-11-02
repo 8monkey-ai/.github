@@ -70,9 +70,11 @@ jobs:
           mkdir -p ~/.pi/agent
           echo '{"providers":{"amazon-bedrock":{"compat":{"supportsStrictMode":false}}}}' > ~/.pi/agent/models.json
 
+      # shortcut: v2.30.0 and later fail to open pull requests with a GitHub App token.
+      # Remove this pin when https://github.com/shaftoe/pi-coding-agent-action/issues/432 is fixed.
       - name: Run Pi agent
         id: pi
-        uses: shaftoe/pi-coding-agent-action@develop
+        uses: shaftoe/pi-coding-agent-action@babaa1a909dd7021abc538be6f20c1757b3b8fb7 # v2.29.1
         with:
           github_token: ${{ steps.app-token.outputs.token }}
           provider: amazon-bedrock
