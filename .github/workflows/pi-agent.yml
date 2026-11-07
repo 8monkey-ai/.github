@@ -74,7 +74,7 @@ jobs:
       # Remove this pin when https://github.com/shaftoe/pi-coding-agent-action/issues/432 is fixed.
       - name: Run Pi agent
         id: pi
-        uses: shaftoe/pi-coding-agent-action@babaa1a909dd7021abc538be6f20c1757b3b8fb7 # v2.29.1
+        uses: turisanapo/pi-coding-agent-action@69f658b522703647d5e2c1eb8d02faba44cc4a9d
         with:
           github_token: ${{ steps.app-token.outputs.token }}
           provider: amazon-bedrock
